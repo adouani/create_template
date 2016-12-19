@@ -11,11 +11,11 @@ with open(os.path.join(here,'README.rst')) as f:
 with open(os.path.join(here,'CHANGES.rst')) as f:
     changes = f.read()
 
-with open(os.path.join(here,'LICENSE.txt')) as f:
+with open(os.path.join(here,'LICENSE')) as f:
     license = f.read()
 
 with open(os.path.join(here,'requirements.txt')) as f:
-    requires = f.read()
+    requires = f.readlines()
 
 
 requires.extend([
